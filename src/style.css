@@ -1,0 +1,819 @@
+.bodyWrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: "WoffBold";
+    src: url(./Bold/Bold.woff);
+    font-style: normal;
+    /* font-weight: 100; */
+}
+
+@font-face {
+    font-family: "WoffRegular";
+    src: url(./Regular/Regular.woff);
+    font-style: normal;
+}
+
+.headerTop {
+    width: 100vw;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.companyLogo {
+    margin-left: 50%;
+}
+
+.mainLogo {
+    width: 80px;
+    height: 50px;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.searchItem,
+.nameItem,
+.languageItem {
+    padding: 15px 15px;
+    font-family: WoffRegular;
+    font-size: 13px;
+    color: #a7a7a7;
+    font-weight: bolder;
+}
+
+.searchItem {
+    color: red;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flag {
+    width: 30px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.homeBtn {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+}
+
+.navItem {
+    margin-left: 20px;
+    font-family: WoffRegular;
+    color: #3a3a3a;
+    font-size: 18px;
+}
+
+.carouselDiv {
+    position: relative;
+    width: 100%;
+    height: 65%;
+}
+
+.leftBtnDiv {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    z-index: 10;
+}
+
+.rightBtnDiv {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    z-index: 10;
+}
+
+.leftBtn,
+.rightBtn {
+    background-color: transparent;
+    border: hidden;
+    color: white;
+    z-index: 10;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgDiv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgContent {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.imgContent p {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: WoffBold;
+    z-index: 10;
+    color: white;
+}
+
+.imgContent button {
+    width: fit-content;
+    height: 40px;
+    font-size: 20px;
+    border: hidden;
+    background-color: #e4022b;
+    color: white;
+    font-weight: lighter;
+}
+
+.cardsWrapper {
+    width: 100%;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsHeadingMain {
+    width: 100%;
+    height: 15%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: WoffRegular;
+    color: #303193;
+}
+
+.cardsHeadingMain p {
+    margin: 0px;
+}
+
+.cardsCover {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+    justify-content: space-evenly;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px 15px; */
+    width: 30%;
+    height: 100%;
+}
+
+.cardHeading {
+    font-size: 25px;
+    margin: 25px 20px;
+    color: #303193;
+    font-family: WoffBold;
+}
+
+.cardImg {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.cardTile {
+    height: 50%;
+    width: 100%;
+}
+
+.cardPara {
+    margin: 5px 20px;
+    font-size: 20px;
+    font-family: WoffRegular;
+    color: #565557;
+}
+
+.cardButtons {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px;
+}
+
+.cardButtons button {
+    display: flex;
+    flex-direction: row;
+    border: hidden;
+    background-color: transparent;
+    font-size: 20px;
+    color: #e4022b;
+    text-align: left;
+    font-family: WoffRegular;
+}
+
+.promotionsWrapper {
+    width: 100%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.promotionsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.promotionsImg {
+    width: 50%;
+    height: 100%;
+    background-color: #e4022b;
+    object-fit: cover;
+    object-position: right;
+}
+
+.promotionBlock {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.promotionHeading {
+    font-size: 35px;
+    color: #303193;
+    font-weight: bold;
+    margin: 40px 40px;
+    font-family: WoffRegular;
+}
+
+.promotionPara {
+    margin: 5px 40px;
+    font-size: 20px;
+    font-family: WoffRegular;
+    color: #565557;
+}
+
+.promotionButtons {
+    margin: 15px 30px;
+}
+
+.promotionButtons button {
+    border: hidden;
+    background-color: transparent;
+    color: #e4022b;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: WoffRegular;
+}
+
+.promotionBtn {
+    text-align: left;
+}
+
+.adsContainer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adsImg {
+    width: 70%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.footerWrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerImg {
+    width: 100%;
+    height: 50%;
+}
+
+.canopyImg {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+.footerNavWrapper {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid lightgray;
+}
+
+.footerNav1,
+.footerNav2 {
+    margin-top: 20px;
+}
+
+.footerNav1 li,
+.footerNav2 li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: WoffRegular;
+    color: #545355;
+    font-size: 14px;
+}
+
+.logoBar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.socialMediaLogo {
+    margin-right: 30px;
+}
+
+.topOil {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.topOil img {
+    width: 70%;
+    height: 90%;
+}
+
+.footerBottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.copyrightsDiv {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.irvingBottomLogo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.irvingBottomLogo img {
+    width: 50px;
+    height: 30px;
+}
+
+.irvingCopyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* margin-top: 10px; */
+}
+
+.irvingCopyright div {
+    margin-left: 10px;
+    font-family: WoffRegular;
+    color: #545355;
+    font-size: 14px;
+}
+
+.copyrightNav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.copyright2021 {
+    font-family: WoffRegular;
+    color: #545355;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.copyrightNav li {
+    list-style: none;
+    margin-right: 30px;
+    font-family: WoffRegular;
+    color: #545355;
+    font-size: 14px;
+}
+
+@media screen and (max-width:480px) {
+    .bodyWrapper {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 20px 20px;
+    }
+    .headerTop {
+        width: 100%;
+        justify-content: space-evenly;
+        height: 5%;
+    }
+    .searchContainer {
+        width: 35%;
+    }
+    .homeBtn {
+        display: flex;
+        width: 35%
+    }
+    .companyLogo {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .nameItem,
+    .language {
+        display: none;
+    }
+    .searchItem {
+        margin-bottom: 30px;
+    }
+    .navbar {
+        display: none;
+        height: 0%;
+    }
+    .carouselDiv {
+        width: 100%;
+        height: 95%;
+        margin-top: 10px;
+    }
+    .imgContent {
+        font-size: 35px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .imgContent p {
+        z-index: 10;
+    }
+    .imgContent button {
+        font-size: 15px;
+    }
+    .cardsHeadingMain {
+        font-size: 30px;
+        /* margin-top: 20px; */
+    }
+    .cardsWrapper {
+        height: fit-content;
+        margin-top: 20px;
+    }
+    .cardsCover {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .cardContainer {
+        width: 100%;
+        margin-top: 50px;
+        box-shadow: 5px 5px 5px 5px lightgray;
+    }
+    .cardHeading {
+        font-size: 20px;
+    }
+    .cardPara {
+        font-size: 18px;
+    }
+    .cardButtons button {
+        font-size: 18px;
+    }
+    .cardBtn span {
+        margin-top: 2px;
+    }
+    .promotionsWrapper {
+        height: 100%;
+        margin-top: 45px;
+        box-shadow: 5px 5px 5px 5px lightgray;
+    }
+    .promotionsImg {
+        object-fit: cover;
+        object-position: right;
+    }
+    .promotionHeading {
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    .promotionPara {
+        display: none;
+    }
+    .promotionButtons {
+        margin: 20px 0px;
+    }
+    .promotionButtons button {
+        font-size: 15px;
+        text-align: left;
+    }
+    .adsContainer {
+        height: fit-content;
+    }
+    .adsImg {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+    }
+    .canopyImg {
+        height: 70%;
+    }
+    .footerNavWrapper {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .logoBar {
+        width: 50%;
+    }
+    .topOil {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .topOil {
+        width: 50%;
+        height: 40px;
+    }
+    .footerBottom {
+        flex-direction: column;
+    }
+    .copyrightsDiv {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copyrightNav {
+        width: 100%;
+    }
+    .irvingBottomLogo {
+        width: 50%;
+        justify-content: center;
+    }
+    .irvingBottomLogo img {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:750px) {
+    .bodyWrapper {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 20px 20px;
+    }
+    .headerTop {
+        width: 100%;
+        justify-content: space-evenly;
+        height: 5%;
+    }
+    .searchContainer {
+        width: 35%;
+    }
+    .homeBtn {
+        display: flex;
+        width: 35%
+    }
+    .companyLogo {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .nameItem,
+    .language {
+        display: none;
+    }
+    .searchItem {
+        margin-bottom: 30px;
+    }
+    .navbar {
+        display: none;
+        height: 0%;
+    }
+    .carouselDiv {
+        width: 100%;
+        height: 95%;
+        margin-top: 10px;
+    }
+    .imgContent {
+        font-size: 45px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .imgContent p {
+        z-index: 10;
+    }
+    .imgContent button {
+        font-size: 20px;
+    }
+    .cardsHeadingMain {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .cardsWrapper {
+        height: fit-content;
+        margin-top: 20px;
+    }
+    .cardsCover {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .cardContainer {
+        width: 100%;
+        margin-top: 40px;
+        box-shadow: 5px 5px 5px 5px lightgray;
+    }
+    .cardHeading {
+        font-size: 25px;
+    }
+    .cardPara {
+        font-size: 22px;
+    }
+    .cardButtons button {
+        font-size: 20px;
+    }
+    .cardBtn span {
+        margin-top: 2px;
+    }
+    .promotionsWrapper {
+        height: 100%;
+        margin-top: 45px;
+        box-shadow: 5px 5px 5px 5px lightgray;
+    }
+    .promotionHeading {
+        font-size: 25px;
+        margin: 10px 10px;
+    }
+    .promotionPara {
+        display: none;
+    }
+    .promotionButtons {
+        margin: 20px 0px;
+    }
+    .promotionButtons button {
+        font-size: 18px;
+        text-align: left;
+    }
+    .adsContainer {
+        height: fit-content;
+    }
+    .adsImg {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+    }
+    .canopyImg {
+        height: 70%;
+    }
+    .footerNavWrapper {
+        height: fit-content;
+        flex-direction: column;
+        font-size: 18px;
+    }
+    .logoBar {
+        width: 50%;
+    }
+    .topOil {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .topOil {
+        width: 50%;
+        height: 50px;
+    }
+    .footerBottom {
+        flex-direction: column;
+        font-size: 16px;
+    }
+    .copyrightsDiv {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copyrightNav {
+        width: 100%;
+    }
+    .irvingBottomLogo {
+        width: 50%;
+        justify-content: center;
+    }
+    .irvingBottomLogo img {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:950px) {
+    .companyLogo {
+        width: 50%;
+        margin-left: 20px;
+    }
+    .searchContainer {
+        width: 50%;
+    }
+    .searchItem {
+        margin-right: 25px;
+    }
+    .cardsCover {
+        height: fit-content;
+    }
+    .cardsHeadingMain {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        height: 15%;
+    }
+    .cardsWrapper {
+        height: auto;
+    }
+    .promotionsWrapper {
+        height: auto;
+        margin-top: 50px;
+    }
+    .promotionsImg {
+        height: auto;
+    }
+    .adsContainer {
+        height: fit-content;
+    }
+    .adsImg {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:951px) and (max-width:1100px) {
+    .adsContainer {
+        height: fit-content;
+    }
+    .adsImg {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+    }
+}
