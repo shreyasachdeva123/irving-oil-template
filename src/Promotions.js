@@ -17,7 +17,7 @@ const Promotions = ({ promotionContent }) => {
                             {index === 1 && (
                                 <>
                                     <PromotionTile promotionObj={promotionObj} />
-                                    <img src={promotionObj.img} alt={promotionObj.altTag} className="promotionsImg" />
+                                    <img src={promotionObj.img} alt={promotionObj.altTag} className="promotionsImg2" />
                                 </>
                             )}
                         </div>

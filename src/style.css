@@ -276,6 +276,14 @@
     object-position: right;
 }
 
+.promotionsImg2 {
+    width: 50%;
+    height: 100%;
+    background-color: #e4022b;
+    object-fit: cover;
+    object-position: right;
+}
+
 .promotionBlock {
     width: 50%;
     height: 100%;
@@ -466,6 +474,39 @@
     font-size: 14px;
 }
 
+.portal {
+    width: 100vw;
+    height: 100vh;
+}
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modalBar {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e4022b;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+}
+
+.modalBar .navItem {
+    font-size: 25px;
+    margin-top: 25px;
+    color: white;
+}
+
 @media screen and (max-width:480px) {
     .bodyWrapper {
         box-sizing: border-box;
@@ -506,7 +547,7 @@
     }
     .imgContent {
         font-size: 35px;
-        margin-top: 40px;
+        margin-top: 90px;
         margin-left: 20px;
     }
     .imgContent p {
@@ -553,6 +594,9 @@
     .promotionsImg {
         object-fit: cover;
         object-position: right;
+    }
+    .promotionsImg2 {
+        object-position: center;
     }
     .promotionHeading {
         font-size: 20px;
@@ -700,6 +744,13 @@
         height: 100%;
         margin-top: 45px;
         box-shadow: 5px 5px 5px 5px lightgray;
+    }
+    .promotionsImg {
+        object-fit: cover;
+        object-position: right;
+    }
+    .promotionsImg2 {
+        object-position: center;
     }
     .promotionHeading {
         font-size: 25px;
