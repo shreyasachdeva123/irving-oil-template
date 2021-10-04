@@ -3,10 +3,10 @@ import CompanyLogo from "./CompanyLogo";
 import Search from "./Search";
 import HomeButton from "./HomeButton";
 
-const HeaderTop = () => {
+const HeaderTop = ({ openModal, setOpenModal }) => {
     return (
         <div className="headerTop">
-            <HomeButton />
+            <HomeButton openModal={openModal} setOpenModal={setOpenModal} />
             <CompanyLogo />
             <Search />
         </div>

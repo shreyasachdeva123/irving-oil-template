@@ -32,6 +32,8 @@ function App() {
     }
   ];
 
+  const [openModal, setOpenModal] = useState(false);
+
   const [currentImg, setCurrentImg] = useState(0);
 
   const cardImgs = [{
@@ -83,7 +85,9 @@ function App() {
 
   return (
     <div className="bodyWrapper">
-      <HeaderTop />
+      <HeaderTop
+        openModal={openModal}
+        setOpenModal={setOpenModal} />
       <Navbar />
       <Carousel
         setCurrentImg={setCurrentImg}
